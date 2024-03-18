@@ -346,24 +346,24 @@ function group(array, keySelector, valueSelector) {
  */
 
 const cssSelectorBuilder = {
-  element(value) {
-    ;
+  element(/* value */) {
+    throw new Error('Not implemented');
   },
 
-  id(value) {
-  ;
+  id(/* value */) {
+    throw new Error('Not implemented');
   },
 
-  class(value) {
-    ;
+  class(/* value */) {
+    throw new Error('Not implemented');
   },
 
-  attr(value) {
-    ;
+  attr(/* value */) {
+    throw new Error('Not implemented');
   },
 
-  pseudoClass(value) {
-    ;
+  pseudoClass(/* value */) {
+    throw new Error('Not implemented');
   },
 
   pseudoElement(/* value */) {
