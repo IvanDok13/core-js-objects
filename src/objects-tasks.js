@@ -372,15 +372,15 @@ class MyBaseElementSelector {
   }
 
   checkOrder(value) {
-    const LAST = this.stackOrder.pop();
+    const LASTEL = this.stackOrder.pop();
     const CURRENT = value;
-    if (!LAST) {
+    if (!LASTEL) {
       this.stackOrder.push(CURRENT);
-    } else if (CURRENT < LAST) {
+    } else if (CURRENT < LASTEL) {
       throw new Error(
         'Selector parts should be arranged in the following order: element, id, class, attribute, pseudo-class, pseudo-element'
       );
-    } else if (CURRENT > LAST) {
+    } else if (CURRENT > LASTEL) {
       this.stackOrder.push(CURRENT);
     }
   }
